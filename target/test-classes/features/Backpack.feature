@@ -25,7 +25,7 @@ Feature: Backpack Feature
   Scenario Outline: This scenario verifies backpack types displayed on backpacks page as a anonymous user
     Given when user clicks on Welcome to backpacks
     When backapacks page is displayed
-    Then backpacks page should have <Backpacks>
+    Then backpacks page should have "<Backpacks>"
     Examples:
       | Backpacks |
       | Kids      |
@@ -34,19 +34,18 @@ Feature: Backpack Feature
       | Unisex    |
       | Designer  |
 
-    Scenario Outline: This scenario verifies backpack sizes displayed for each backpack type
-      Given when user clicks on Welcome to backpacks
-      When backapacks page is displayed
-      And user clicks on <Backpacks>
-      Then user is displayed with backpack <Sizes>
-      Then
-      Examples:
-        | Backpacks |Sizes|
-        | Kids      |Small|
-        | Men       |Medium|
-        | Women     |Large|
-        | Unisex    |     |
-        | Designer  |     |
+  Scenario Outline: This scenario verifies backpack sizes displayed for each backpack type
+    Given when user clicks on Welcome to backpacks
+    When backapacks page is displayed
+    And user clicks on "<Backpacks>"
+    Then user is displayed with backpack "<Sizes>"
+    Examples:
+      | Backpacks | Sizes  |
+      | Kids      | Small  |
+      | Men       | Medium |
+      | Women     | Large  |
+      | Unisex    |        |
+      | Designer  |        |
 
 
 
