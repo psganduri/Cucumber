@@ -79,5 +79,6 @@ public class Backpack_Stepdefs {
 
     @Then("user is displayed with backpack {string}")
     public void userIsDisplayedWithBackpack(String arg0) {
+
     }
 }

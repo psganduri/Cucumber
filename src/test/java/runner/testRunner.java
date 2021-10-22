@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\psgan\\OneDrive\\Documents\\Excercises\\MyBackpack\\src\\test\\resources\\features\\Backpack.feature",glue = {"stepDefinitions"})
+@CucumberOptions(features = "C:\\Users\\psgan\\OneDrive\\Documents\\Excercises\\MyBackpack\\src\\test\\resources\\features\\SanitySelinium.feature",glue = {"stepDefinitions"})
 public class testRunner {
 
 }
